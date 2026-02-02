@@ -62,16 +62,6 @@ python scraping/english/english_new/separate_versions.py --input bible_data.json
 
 This creates `versions/` with files like `NIV.json`, `KJV.json`, etc.
 
-## Verify Your Data
-
-After scraping, check the data:
-
-```bash
-python verify_bible_data.py bible_data.json
-```
-
-This will show statistics, test known verses, and check for missing data.
-
 ## Use Your Data
 
 ### Python Example
@@ -96,27 +86,6 @@ versions = ["NIV", "KJV", "ESV"]
 for ver in versions:
     print(f"{ver}: {bible[ver]['Genesis']['1']['1']}")
 ```
-
-### Interactive Exploration
-
-```bash
-python verify_bible_data.py bible_data.json --interactive
-```
-
-Then try commands like:
-```
->> get NIV John 3:16
->> search love
->> list versions
->> list books NIV
-```
-
-## Troubleshooting
-
-### "No verses found"
-- Some versions may not be available on BibleHub with those exact abbreviations
-- Check `bible_scraper.log` for details
-- Try adjusting version codes in the script
 
 ### Script is slow
 - Default delay is 1 second between requests (to be polite)
