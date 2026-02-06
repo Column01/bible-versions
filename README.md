@@ -23,13 +23,20 @@ This repo includes scrapers for:
 And a utility to split a combined scrape into one file per version:
  
 - [`seperate-versions --help`](src/bible_versions/scraping/separate_versions.py)
+
+Other misc scripts:
+
+- [`apply-book-name-map  --help`](src/bible_versions/scraping/multi_language/helpers/apply_book_name_mapping.py)
+- [`build-book-name-map --help`](src/bible_versions/scraping/multi_language/helpers/build_book_name_mapping.py)
+- [`build-locale-map --help`](src/bible_versions/scraping/multi_language/helpers/build_locale_version_map.py)
+- [`orangize-versions-by-locale --help`](src/bible_versions/scraping/multi_language/helpers/organize_versions_by_locale.py)
  
 ## 📁 What files you get
  
 - **Combined output**
   A single `bible_data.json` containing all scraped versions.
 - **Per-version files (optional)**
-  Use `src/bible_versions/scraping/separate_versions.py` to create a `versions/` folder with one JSON per translation/version.
+  Use the `seperate-versions` tool to create a `versions/` folder with one JSON per translation/version.
 - **HTML cache**
   The scrapers store cached verse HTML under `html_cache/` inside each scraper folder.
 - **Progress file**
