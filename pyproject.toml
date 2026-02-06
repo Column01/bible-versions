@@ -10,7 +10,7 @@ authors = [
 ]
 description = "A free, open-source set of scripts that let you scrape Bible translations across 37 languages from BibleHub.com and store them as JSON for your own usage."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]

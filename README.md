@@ -9,29 +9,27 @@ Each translation can be stored as its own `.json` file for easy parsing, analysi
 
 ## � Quick start
  
-The step-by-step instructions live here:
- 
-`scraping/QUICKSTART.md`
+Step-by-step installation instructions live [here](src/bible_versions/scraping/QUICKSTART.md)
  
 This repo includes scrapers for:
  
 - **English**
-  `scraping/english/bible_scraper.py`
+  - [`bible-scraper --help`](src/bible_versions/scraping/english/bible_scraper.py)
 - **Multi-language**
-  `scraping/multi_language/bible_scraper_multi.py`
+  - [`bible-scraper-multi-lang --help`](src/bible_versions/scraping/multi_language/bible_scraper_multi.py)
 - **Apocrypha**
-  `scraping/apocrypha/bible_scraper.py`
+  - [`bible-scraper-apoc --help`](src/bible_versions/scraping/apocrypha/bible_scraper.py)
  
 And a utility to split a combined scrape into one file per version:
  
-- `scraping/separate_versions.py`
+- [`seperate-versions --help`](src/bible_versions/scraping/separate_versions.py)
  
 ## 📁 What files you get
  
 - **Combined output**
   A single `bible_data.json` containing all scraped versions.
 - **Per-version files (optional)**
-  Use `scraping/separate_versions.py` to create a `versions/` folder with one JSON per translation/version.
+  Use `src/bible_versions/scraping/separate_versions.py` to create a `versions/` folder with one JSON per translation/version.
 - **HTML cache**
   The scrapers store cached verse HTML under `html_cache/` inside each scraper folder.
 - **Progress file**
