@@ -22,7 +22,7 @@ This repo includes scrapers for:
  
 And a utility to split a combined scrape into one file per version:
  
-- [`seperate-versions --help`](src/bible_versions/scraping/separate_versions.py)
+- [`separate-versions --help`](src/bible_versions/scraping/separate_versions.py)
 
 Other misc scripts:
 

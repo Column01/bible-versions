@@ -58,7 +58,7 @@ It will continue where it left off!
 After `bible_data.json` is complete, you can split it into one file per translation:
 
 ```bash
-python scraping/english/english_new/separate_versions.py --input bible_data.json --output-dir versions
+separate-versions --input bible_data.json --output-dir versions
 ```
 
 This creates `versions/` with files like `NIV.json`, `KJV.json`, etc.
