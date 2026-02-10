@@ -29,7 +29,7 @@ Other misc scripts:
 - [`apply-book-name-map  --help`](src/bible_versions/scraping/multi_language/helpers/apply_book_name_mapping.py)
 - [`build-book-name-map --help`](src/bible_versions/scraping/multi_language/helpers/build_book_name_mapping.py)
 - [`build-locale-map --help`](src/bible_versions/scraping/multi_language/helpers/build_locale_version_map.py)
-- [`orangize-versions-by-locale --help`](src/bible_versions/scraping/multi_language/helpers/organize_versions_by_locale.py)
+- [`organize-versions-by-locale --help`](src/bible_versions/scraping/multi_language/helpers/organize_versions_by_locale.py)
  
 ## 📁 What files you get
  
